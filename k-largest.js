@@ -1,15 +1,10 @@
-var kthLargestElement = function(arr, k){
-//  function max(arr){
-//     let max = 0
-//     for(let i=0;i<arr.length;i++){
-//         if(arr[i] > max){
-//             max = arr[i];
-//         }
-//     }
-//     return max;
-//  }
+//Given an array and integer k, find the kth largest element in the array
+//example
+//input[5,6,2,8,9] k= 3
+//output=6
 
-//  let maxVal = max(arr);
+
+var kthLargestElement = function(arr, k){
  let sorted = arr.sort((a,b) => b-a);
  for(let i=0;i<sorted.length;i++){
     if(i === (k-1)){
